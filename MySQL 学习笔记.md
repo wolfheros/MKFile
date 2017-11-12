@@ -60,3 +60,5 @@ WHERE vend_id <> 'DLL01';
 SELECT vend_id, prod_name
 FROM Products
 WHERE vend_id != 'DLL01';
+# 区间值选取和匹配，关键字：WHERE cow BETWEEN a AND b;
+BETWEEN 和 WHERE 关键字配合使用，达到筛选指定区间的匹配项。
