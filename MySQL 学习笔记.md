@@ -148,3 +148,20 @@ Doll House Inc. (USA)
 Fun and Games (England)
 Furball Inc. (USA)
 Jouets et ours (France)
+
+# 使用别名，关键字: AS
+SELECT Concat(vend_name, ' (', vend_country, ')')
+AS vend_title
+FROM Vendors
+ORDER BY vend_name;
+
+# 执行算术运算
+SELECT prod_id, quantity, item_price, quantity * item_price AS Expended_price
+FROM OrderItems
+WHERE order_num = 20008;
+
+# 数据库也可以使用 'SELECT' 执行别的操作
+# 返回时间
+SELECT now() AS TIME;
+# 直接进行计算
+SELECT Trim('abc'), 123*4 AS Result;
